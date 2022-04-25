@@ -1,0 +1,83 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Inika:400|Spartan:400');
+
+:root {
+  /* primary-light */
+  --primary-300: #a29dff;
+  --primary-400: #837dff;
+
+  /* primary color */
+  --primary-500: #645cff;
+
+  /* primary-dark */
+  --primary-600: #504acc;
+  --primary-700: #3c3799;
+
+  --grey-100: #f1f5f9;
+  --grey-800: #1e293b;
+
+  --textColor: var(--grey-900);
+  --borderRadius: 1rem;
+  --fixed-width: 500px;
+  --letterSpacing: 1px;
+  --transition: 1s ease-in-out all;
+
+  --box-shadow-2: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --box-shadow-3: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  --bodyFont: 'Spartan', sans-serif;
+}
+
+body {
+  background-color: var(--primary-300);
+  color: var(--textColor);
+  line-height: 1.5;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 1.38rem;
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.section-center {
+  width: var(--fixed-width);
+  background-color: var(--grey-100);
+  box-shadow: var(--box-shadow-3);
+  margin: 10rem auto;
+  height: 40vh;
+  display: grid;
+  place-items: center;
+  border-radius: var(--borderRadius);
+}
+
+.yab {
+  text-align: center;
+  letter-spacing: var(--letterSpacing);
+  padding: 0.75rem;
+}
+.btn {
+  background-color: var(--primary-500);
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border: transparent;
+  color: var(--grey-100);
+  border-radius: 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: var(--box-shadow-2);
+}
+
+footer {
+  text-align: center;
+  color: var(--grey-100);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
