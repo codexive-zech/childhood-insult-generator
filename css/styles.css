@@ -76,7 +76,8 @@ h2 {
 }
 
 footer {
-  text-align: center;
+  display: grid;
+  place-items: center;
   color: var(--grey-100);
   font-size: 1.5rem;
   font-weight: bold;
