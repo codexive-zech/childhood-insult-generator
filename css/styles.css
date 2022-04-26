@@ -76,9 +76,9 @@ h2 {
 }
 
 footer {
-  display: grid;
-  place-items: center;
+  margin: 0 auto;
   color: var(--grey-100);
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: center;
 }
